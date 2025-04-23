@@ -17,6 +17,7 @@ function App() {
     async function fetchData() {
       const NASA_KEY = import.meta.env.VITE_NASA_API_KEY;
       const url = "https://api.nasa.gov/planetary/apod?api_key=" + NASA_KEY;
+      console.log("NASA KEY:", import.meta.env.VITE_NASA_API_KEY);
 
       //persist data so we dont have to fetch it again
       const today = new Date().toDateString();
